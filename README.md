@@ -1,0 +1,3 @@
+# React Native AsyncStorage and useCallback Issue
+
+This repository demonstrates a common yet subtle bug in React Native applications involving the use of AsyncStorage within a functional component that employs the useCallback hook. The bug arises from the asynchronous nature of AsyncStorage combined with useCallback's memoization behavior, resulting in the UI displaying stale data.  The solution showcases how to effectively handle this scenario by leveraging useEffect with the appropriate dependency array.
